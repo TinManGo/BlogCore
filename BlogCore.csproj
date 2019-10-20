@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BlogCore.Model\**" />
+    <Content Remove="BlogCore.Model\**" />
+    <EmbeddedResource Remove="BlogCore.Model\**" />
+    <None Remove="BlogCore.Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="BlogCore.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="BlogCore.Model\BlogCore.Model.csproj" />
+  </ItemGroup>
+
+</Project>
